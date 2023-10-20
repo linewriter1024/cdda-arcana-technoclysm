@@ -17,12 +17,12 @@
   {
     "id": "magitech_boat",
     "type": "vehicle",
-    "name": "Magic Boat",
+    "name": "Magic All-terrain Boat",
     "parts": [
-      { "x": 0, "y": 0, "parts": [ "frame#vertical", "metal_boat_hull" ] },
+      { "x": 0, "y": 0, "parts": [ "frame#vertical", "metal_boat_hull", "wheel_mount_steerable", "wheel" ] },
       { "x": 1, "y": 0, "parts": [ "frame#horizontal", "metal_boat_hull" ] },
       { "x": 2, "y": 0, "parts": [ "frame#horizontal", "metal_boat_hull" ] },
-      { "x": 3, "y": 0, "parts": [ "frame#sw", "metal_boat_hull" ] },
+      { "x": 3, "y": 0, "parts": [ "frame#sw", "metal_boat_hull", "wheel_mount", "wheel" ] },
       {
         "x": 0,
         "y": 1,
@@ -32,10 +32,10 @@
       { "x": 2, "y": 1, "parts": [ "frame#cross", "metal_boat_hull" ] },
       { "x": 3, "y": 1, "parts": [ "frame#cross", "metal_boat_hull", "seat", "seatbelt", "controls", "dashboard" ] },
       { "x": 4, "y": 1, "parts": [ "frame#horizontal", "metal_boat_hull", "windshield" ] },
-      { "x": 0, "y": 2, "parts": [ "frame#vertical", "metal_boat_hull" ] },
+      { "x": 0, "y": 2, "parts": [ "frame#vertical", "metal_boat_hull", "wheel_mount_steerable", "wheel" ] },
       { "x": 1, "y": 2, "parts": [ "frame#horizontal", "metal_boat_hull" ] },
       { "x": 2, "y": 2, "parts": [ "frame#horizontal", "metal_boat_hull" ] },
-      { "x": 3, "y": 2, "parts": [ "frame#ne", "metal_boat_hull" ] }
+      { "x": 3, "y": 2, "parts": [ "frame#ne", "metal_boat_hull", "wheel_mount", "wheel" ] }
     ]
   },
   {
@@ -44,8 +44,8 @@
     "name": "Magic Horseless Carriage",
     "parts": [
       { "x": 0, "y": 0, "parts": [ "frame_wood#cross", "wooden_aisle#vertical", "roof_cloth" ] },
-      { "x": 0, "y": -1, "parts": [ "frame_wood#cross", "wood box", "roof_cloth" ] },
-      { "x": 0, "y": 1, "parts": [ "frame_wood#cross", "wood box", "roof_cloth" ] },
+      { "x": 0, "y": -1, "parts": [ "frame_wood#cross", "cargo_space", "roof_cloth" ] },
+      { "x": 0, "y": 1, "parts": [ "frame_wood#cross", "cargo_space", "roof_cloth" ] },
       { "x": 0, "y": -2, "parts": [ "frame_wood#vertical_left", "clothboard#vertical_left", "roof_cloth" ] },
       { "x": 0, "y": 2, "parts": [ "frame_wood#vertical_right", "clothboard#vertical_right", "roof_cloth" ] },
       { "x": 1, "y": 0, "parts": [ "frame_wood#cross", "wooden_aisle#vertical", "roof_cloth" ] },
@@ -66,14 +66,14 @@
         "y": 2,
         "parts": [ "frame_wood#ne", "wooden_aisle#horizontal", "wheel_mount_wood_steerable", "wheel_wood_b" ]
       },
-      { "x": -1, "y": -1, "parts": [ "frame_wood#cross", "wood box", "roof_cloth" ] },
+      { "x": -1, "y": -1, "parts": [ "frame_wood#cross", "cargo_space", "roof_cloth" ] },
       { "x": -1, "y": 0, "parts": [ "frame_wood#cross", "wooden_aisle#vertical", "roof_cloth" ] },
-      { "x": -1, "y": 1, "parts": [ "frame_wood#cross", "wood box", "roof_cloth" ] },
+      { "x": -1, "y": 1, "parts": [ "frame_wood#cross", "cargo_space", "roof_cloth" ] },
       { "x": -1, "y": -2, "parts": [ "frame_wood#vertical_left", "clothboard#vertical_left", "roof_cloth" ] },
       { "x": -1, "y": 2, "parts": [ "frame_wood#vertical_right", "clothboard#vertical_right", "roof_cloth" ] },
-      { "x": -2, "y": -1, "parts": [ "frame_wood#cross", "wood box", "roof_cloth" ] },
+      { "x": -2, "y": -1, "parts": [ "frame_wood#cross", "cargo_space", "roof_cloth" ] },
       { "x": -2, "y": 0, "parts": [ "frame_wood#cross", "wooden_aisle#vertical", "roof_cloth" ] },
-      { "x": -2, "y": 1, "parts": [ "frame_wood#cross", "wood box", "roof_cloth" ] },
+      { "x": -2, "y": 1, "parts": [ "frame_wood#cross", "cargo_space", "roof_cloth" ] },
       {
         "x": -2,
         "y": -2,
