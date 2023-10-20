@@ -19,10 +19,10 @@
     "type": "vehicle",
     "name": "Magic All-terrain Boat",
     "parts": [
-      { "x": 0, "y": 0, "parts": [ "frame#vertical", "metal_boat_hull", "wheel_mount_steerable", "wheel" ] },
+      { "x": 0, "y": 0, "parts": [ "frame#vertical", "wheel_mount_medium_steerable", "wheel" ] },
       { "x": 1, "y": 0, "parts": [ "frame#horizontal", "metal_boat_hull" ] },
       { "x": 2, "y": 0, "parts": [ "frame#horizontal", "metal_boat_hull" ] },
-      { "x": 3, "y": 0, "parts": [ "frame#sw", "metal_boat_hull", "wheel_mount", "wheel" ] },
+      { "x": 3, "y": 0, "parts": [ "frame#sw", "wheel_mount_medium", "wheel" ] },
       {
         "x": 0,
         "y": 1,
@@ -32,10 +32,10 @@
       { "x": 2, "y": 1, "parts": [ "frame#cross", "metal_boat_hull" ] },
       { "x": 3, "y": 1, "parts": [ "frame#cross", "metal_boat_hull", "seat", "seatbelt", "controls", "dashboard" ] },
       { "x": 4, "y": 1, "parts": [ "frame#horizontal", "metal_boat_hull", "windshield" ] },
-      { "x": 0, "y": 2, "parts": [ "frame#vertical", "metal_boat_hull", "wheel_mount_steerable", "wheel" ] },
+      { "x": 0, "y": 2, "parts": [ "frame#vertical", "wheel_mount_medium_steerable", "wheel" ] },
       { "x": 1, "y": 2, "parts": [ "frame#horizontal", "metal_boat_hull" ] },
       { "x": 2, "y": 2, "parts": [ "frame#horizontal", "metal_boat_hull" ] },
-      { "x": 3, "y": 2, "parts": [ "frame#ne", "metal_boat_hull", "wheel_mount", "wheel" ] }
+      { "x": 3, "y": 2, "parts": [ "frame#ne", "wheel_mount_medium", "wheel" ] }
     ]
   },
   {
