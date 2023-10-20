@@ -1,0 +1,44 @@
+[
+  {
+    "id": "summon_magitech_carriage",
+    "type": "SPELL",
+    "name": "Summon Carriage",
+    "description": "Materializes a magic carriage.",
+    "valid_targets": [ "ground" ],
+    "flags": [ "SILENT", "NO_HANDS", "NO_LEGS" ],
+    "effect": "summon_vehicle",
+    "effect_str": "magitech_carriage",
+    "shape": "blast",
+    "max_level": 20,
+    "min_range": 5,
+    "max_range": 5,
+    "min_duration": 720000,
+    "max_duration": 720000
+  },
+  {
+    "id": "magitech_carriage_whistle",
+    "type": "TOOL",
+    "copy-from": "whistle",
+    "category": "tools",
+    "name": { "str": "carriage whistle", "str_pl": "carriage whistles" },
+    "description": "A shiny whistle carved with the image of a carriage on either side and a horse's head that you blow into.",
+    "price": "3000 USD",
+    "price_postapoc": "400 USD",
+    "material": [ "steel" ],
+    "pocket_data": [ { "pocket_type": "MAGAZINE", "rigid": true, "ammo_restriction": { "essence_type": 9 } } ],
+    "charges_per_use": 1,
+    "ammo": "essence_type",
+    "use_action": [ { "type": "cast_spell", "spell_id": "summon_magitech_carriage", "no_fail": true, "need_wielding": false, "level": 0 } ],
+    "extend": { "flags": [ "NO_SALVAGE", "MAGIC_FOCUS", "TRADER_KEEP_EQUIPPED" ] }
+  },
+  {
+    "result": "magitech_carriage_whistle",
+    "type": "uncraft",
+    "skill_used": "magic",
+    "difficulty": 4,
+    "time": "20 m",
+    "activity_level": "LIGHT_EXERCISE",
+    "tools": [ [ [ "hexenhammer", -1 ] ] ],
+    "components": [ [ [ "scrap", 10 ] ], [ [ "essence_dull", 60 ] ] ]
+  }
+]

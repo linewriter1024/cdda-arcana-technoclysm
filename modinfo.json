@@ -1,0 +1,11 @@
+[
+  {
+    "type": "MOD_INFO",
+    "ident": "arcana-technoclysm",
+    "name": "Arcana Technoclysm",
+    "authors": "linewriter1024",
+    "description": "Adds a technical aspect to the Arcana mod. A faction of arcanists developed magical technology just before the Cataclysm. Includes summonable vehicles, new locations, and new magical tools.",
+    "category": "magical",
+    "dependencies": [ "dda", "Arcana" ]
+  }
+]

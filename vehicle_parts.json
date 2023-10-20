@@ -1,0 +1,76 @@
+[
+  {
+    "type": "material",
+    "id": "esoteric_energy",
+    "name": "Esoteric Energy",
+    "copy-from": "pseudo_fuel",
+    "fuel_data": { "energy": "500000 kJ", "perpetual": true }
+  },
+  {
+    "id": "esoteric_energy",
+    "name": "esoteric energy",
+    "default": "esoteric_energy",
+    "type": "ammunition_type"
+  },
+  {
+    "id": "esoteric_energy",
+    "type": "AMMO",
+    "category": "chems",
+    "name": "esoteric energy",
+    "description": "Seeing this is a bug.",
+    "weight": "10 g",
+    "volume": "10 ml",
+    "phase": "solid",
+    "material": [ "esoteric_energy" ],
+    "flags": [ "PSEUDO", "PERPETUAL" ],
+    "symbol": "?",
+    "color": "magenta",
+    "count": 1,
+    "ammo_type": "esoteric_energy",
+    "melee_damage": { "bash": 1 }
+  },
+  {
+    "abstract": "magitech_engine",
+    "copy-from": "engine_combustion",
+    "type": "vehicle_part",
+    "fuel_type": "esoteric_energy",
+    "m2c": 60,
+    "//": "30% energy efficiency",
+    "description": "A magical engine."
+  },
+  {
+    "id": "engine_vtwin_magitech",
+    "copy-from": "magitech_engine",
+    "type": "vehicle_part",
+    "item": "v2_combustion_magitech",
+    "durability": 200,
+    "epower": "-50 W",
+    "power": "37300 W",
+    "energy_consumption": "124500 W",
+    "folded_volume": "2 L",
+    "breaks_into": [
+      { "item": "steel_lump", "count": [ 10, 20 ] },
+      { "item": "steel_chunk", "count": [ 10, 20 ] },
+      { "item": "scrap", "count": [ 10, 20 ] }
+    ],
+    "requirements": {
+      "install": { "skills": [ [ "mechanics", 2 ] ], "time": "60 m", "using": [ [ "vehicle_wrench_2", 1 ] ] },
+      "removal": { "skills": [ [ "mechanics", 2 ] ], "time": "30 m", "using": [ [ "vehicle_wrench_2", 1 ] ] },
+      "repair": { "skills": [ [ "mechanics", 3 ] ], "time": "60 m", "using": [ [ "welding_standard", 5 ] ] }
+    },
+    "damage_reduction": { "all": 60 },
+    "extend": { "flags": [ "NO_INSTALL_HIDDEN" ] }
+  },
+  {
+    "type": "GENERIC",
+    "id": "v2_combustion_magitech",
+    "name": "magic v-twin combustion engine",
+    "symbol": "v",
+    "description": "A magical engine.",
+    "volume": "2 L",
+    "weight": "10 kg",
+    "color": "yellow",
+    "material": [ "steel" ],
+    "price": 800000
+  }
+]

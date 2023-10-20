@@ -1,0 +1,11 @@
+[
+  {
+    "id": "arcana_technoclysm",
+    "type": "item_group",
+    "items": [
+      [ "magitech_motorcycle_whistle", 10 ],
+      [ "magitech_boat_whistle", 10 ],
+      [ "magitech_carriage_whistle", 10 ]
+    ]
+  }
+]
