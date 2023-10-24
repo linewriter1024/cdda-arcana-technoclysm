@@ -1,0 +1,19 @@
+[
+  {
+    "type": "scenario",
+    "id": "arcane_urban",
+    "copy-from": "arcane_urban",
+    "extend": {
+      "professions": ["arcana_technoclysm_biker"],
+      "allowed_locs": [ "arcana_technoclysm_warehouse" ]
+    }
+  },
+  {
+    "type": "scenario",
+    "id": "arcane_seeker",
+    "copy-from": "arcane_seeker",
+    "extend": {
+      "professions": ["arcana_technoclysm_biker"]
+    }
+  }
+]

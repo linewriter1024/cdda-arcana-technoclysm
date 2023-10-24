@@ -1,0 +1,36 @@
+[
+  {
+    "type": "profession",
+    "id": "arcana_technoclysm_biker",
+    "name": "Arcane Biker",
+    "description": "You found a strange magical whistle that summoned motorcycles. It was fun for a few months, riding an untracable bike. Now you'll have to ride or die.",
+    "points": 4,
+    "proficiencies": [ "prof_driver" ],
+    "skills": [ { "level": 6, "name": "driving" }, { "level": 3, "name": "magic" } ],
+    "items": {
+      "both": {
+        "items": [
+          "motorbike_pants",
+          "chaps_leather",
+          "socks",
+          "motorbike_boots",
+          "helmet_motor",
+          "leather_police_jacket",
+          "wristwatch",
+          "multitool",
+          "binoculars"
+        ],
+        "entries": [
+          { "group": "charged_smart_phone" },
+          { "item": "sheath", "contents-item": "knife_trench" },
+          { "item": "magitech_motorcycle_whistle", "charges": 7 },
+          { "item": "leg_bag", "variant": "black_leg_bag" },
+          { "item": "mana_gem", "contents-group": "starting_mana_gem_4_essence" }
+        ]
+      },
+      "male": [ "boxer_shorts", "tank_top" ],
+      "female": [ "bra", "boy_shorts" ]
+    },
+    "traits": [ "PROF_ARCANIST" ]
+  }
+]

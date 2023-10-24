@@ -1,13 +1,5 @@
 [
   {
-    "type": "scenario",
-    "id": "arcane_urban",
-    "copy-from": "arcane_urban",
-    "extend": {
-      "allowed_locs": [ "arcana_technoclysm_warehouse" ]
-    }
-  },
-  {
     "type": "start_location",
     "id": "arcana_technoclysm_warehouse",
     "name": { "str": "Strange Warehouse" },
