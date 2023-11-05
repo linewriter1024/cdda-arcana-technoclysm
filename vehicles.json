@@ -53,9 +53,9 @@
       { "x": 1, "y": 1, "parts": [ "frame_wood#cross", "clothboard#horizontal_front", "roof_cloth" ] },
       { "x": 1, "y": -2, "parts": [ "frame_wood#vertical_left", "clothboard#nw", "roof_cloth" ] },
       { "x": 1, "y": 2, "parts": [ "frame_wood#vertical_right", "clothboard#ne", "roof_cloth" ] },
-      { "x": 2, "y": -1, "parts": [ "frame_wood#horizontal_front", "seat_wood" ] },
+      { "x": 2, "y": -1, "parts": [ "frame_wood#horizontal_front", "seat_wood", "engine_vtwin_magitech" ] },
       { "x": 2, "y": 0, "parts": [ "frame_wood#horizontal_front", "seat_wood", "controls", "engine_vtwin_magitech", "alternator_bicycle", "battery_motorbike" ] },
-      { "x": 2, "y": 1, "parts": [ "frame_wood#horizontal_front", "seat_wood" ] },
+      { "x": 2, "y": 1, "parts": [ "frame_wood#horizontal_front", "seat_wood", "engine_vtwin_magitech" ] },
       {
         "x": 2,
         "y": -2,
@@ -87,8 +87,8 @@
       { "x": -3, "y": 0, "parts": [ "frame_wood#horizontal_rear", "wooden_aisle#vertical", "roof_cloth" ] },
       { "x": -3, "y": -1, "parts": [ "frame_wood#horizontal_rear", "clothboard#horizontal_rear", "roof_cloth" ] },
       { "x": -3, "y": 1, "parts": [ "frame_wood#horizontal_rear", "clothboard#horizontal_rear", "roof_cloth" ] },
-      { "x": -3, "y": -2, "parts": [ "frame_wood#sw", "clothboard#sw", "roof_cloth" ] },
-      { "x": -3, "y": 2, "parts": [ "frame_wood#se", "clothboard#se", "roof_cloth" ] }
+      { "x": -3, "y": -2, "parts": [ "frame_wood#sw", "clothboard#sw", "roof_cloth", "wheel_mount_wood", "wheel_wood_b" ] },
+      { "x": -3, "y": 2, "parts": [ "frame_wood#se", "clothboard#se", "roof_cloth", "wheel_mount_wood", "wheel_wood_b" ] }
     ]
   }
 ]
