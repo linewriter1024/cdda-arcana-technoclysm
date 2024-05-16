@@ -3,9 +3,59 @@
     "id": "arcana_technoclysm",
     "type": "item_group",
     "items": [
-      [ "magitech_motorcycle_whistle", 10 ],
+      [ "magitech_motorcycle_whistle", 15 ],
+      [ "magitech_boat_whistle", 10 ],
+      [ "magitech_carriage_whistle", 10 ],
+      [ "arcana_technoclysm_ups_off", 10 ]
+    ]
+  },
+  {
+    "id": "arcana_technoclysm_unique",
+    "type": "item_group",
+    "items": [
+      [ "magitech_motorcycle_whistle", 15 ],
       [ "magitech_boat_whistle", 10 ],
       [ "magitech_carriage_whistle", 10 ]
     ]
+  },
+  {
+    "id": "science",
+    "copy-from": "science",
+    "type": "item_group",
+    "extend": {
+      "items": [
+        { "group": "arcana_technoclysm", "prob": 5 }
+      ]
+    }
+  },
+  {
+    "id": "rare",
+    "copy-from": "rare",
+    "type": "item_group",
+    "extend": {
+      "items": [
+        { "group": "arcana_technoclysm", "prob": 2 }
+      ]
+    }
+  },
+  {
+    "id": "magic_items",
+    "copy-from": "magic_items",
+    "type": "item_group",
+    "extend": {
+      "items": [
+        { "group": "arcana_technoclysm", "prob": 2 }
+      ]
+    }
+  },
+  {
+    "id": "lab_magitech_other",
+    "copy-from": "lab_magitech_other",
+    "type": "item_group",
+    "extend": {
+      "items": [
+        { "group": "arcana_technoclysm", "prob": 10 }
+      ]
+    }
   }
 ]

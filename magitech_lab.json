@@ -112,11 +112,12 @@
           { "item": "home_hw", "chance": 5, "repeat": [ 1, 2 ] },
           { "item": "magic_crafting", "chance": 7, "repeat": [1, 2]},
           { "item": "magic_books", "chance": 5, "repeat": [1, 2]},
-          { "item": "magic_consumables", "chance": 3, "repeat": [1, 2]}
+          { "item": "magic_consumables", "chance": 3, "repeat": [1, 2]},
+          { "item": "arcana_technoclysm", "chance": 1}
         ],
         "8": [
           { "item": "lab_magitech_general", "chance": 100, "repeat": [1, 2]},
-          { "item": "arcana_technoclysm", "chance": 100}
+          { "item": "arcana_technoclysm_unique", "chance": 100}
         ]
       },
       "toilets": { "4": {  } },
