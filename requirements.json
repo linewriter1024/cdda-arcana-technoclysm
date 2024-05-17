@@ -1,0 +1,7 @@
+[
+  {
+    "id": "arcana_technoclysm_whistle",
+    "type": "requirement",
+    "components": [ [ [ "magitech_motorcycle_whistle", 1 ], [ "magitech_boat_whistle", 1 ], [ "magitech_carriage_whistle", 1 ] ] ]
+  }
+]

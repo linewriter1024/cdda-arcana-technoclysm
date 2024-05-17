@@ -1,0 +1,105 @@
+[
+  {
+    "id": "arcana_technoclysm_bionic_talisman",
+    "type": "COMESTIBLE",
+    "comestible_type": "MED",
+    "category": "other",
+    "name": { "str": "bionic talisman" },
+    "description": "A strange paper talisman marked with intricate symbols vaguely resembling a circuit diagram of great complexity.  Using it will summon an Avatar of the Bionic, who can fuse a bionic device into your body, forging electrical and magical connections to your brain and soul.  The process will leave you paralyzed for some time.",
+    "price_postapoc": 6000,
+    "weight": "150 g",
+    "volume": "100 ml",
+    "material": [ "paper" ],
+    "looks_like": "birchbark",
+    "symbol": ",",
+    "color": "cyan",
+    "use_action": {
+      "type": "consume_drug",
+      "activation_message": "You gaze upon the circuits and sense a greater power overtake you.",
+      "effects": [ { "id": "arcana_technoclysm_bionic_talisman_effect", "duration": 5 } ]
+    },
+    "flags": [ "NO_SALVAGE", "NO_INGEST", "NUTRIENT_OVERRIDE" ]
+  },
+  {
+    "type": "effect_type",
+    "id": "arcana_technoclysm_bionic_talisman_effect",
+    "max_duration": "10 s",
+    "name": [ "Bionic Talisman Effect" ],
+    "desc": [
+      "You should not be seeing this."
+    ]
+  },
+  {
+    "type": "effect_on_condition",
+    "id": "arcana_technoclysm_bionic_talisman_eoc",
+    "recurrence": [ "1 s", "1 s" ],
+    "condition": { "u_has_effect": "arcana_technoclysm_bionic_talisman_effect" },
+    "effect": [
+      {
+        "u_spawn_npc": "arcana_technoclysm_bionic_talisman_avatar",
+        "real_count": 1,
+        "min_radius": 1,
+        "max_radius": 3,
+        "lifespan": [ "1 minutes", "3 minutes" ],
+        "spawn_message": "A bionic avatar steps out of a rift in the air."
+      },
+      { "u_lose_effect": "arcana_technoclysm_bionic_talisman_effect" }
+    ]
+  },
+  {
+    "type": "npc",
+    "id": "arcana_technoclysm_bionic_talisman_avatar",
+    "name_unique": "Bionic Avatar",
+    "gender": "male",
+    "attitude": 0,
+    "mission": 3,
+    "class": "NC_BIONIC_TALISMAN",
+    "chat": "TALK_BIONIC_TALISMAN_1",
+    "faction": "no_faction",
+    "personality": {
+      "altruism": 1,
+      "aggression": 0,
+      "bravery": 0,
+      "collector": 0
+    }
+  },
+  {
+    "type": "npc_class",
+    "id": "NC_BIONIC_TALISMAN",
+    "name": { "str": "No class" },
+    "common": false,
+    "job_description": "Avatar of the Bionic",
+    "skills": [ { "skill": "ALL", "level": { "mul": [ { "one_in": 3 }, { "sum": [ { "dice": [ 4, 2 ] }, { "rng": [ -4, -1 ] } ] } ] } } ],
+    "sells_belongings": false,
+    "worn_override": "EMPTY_GROUP",
+    "carry_override": "EMPTY_GROUP",
+    "weapon_override": "EMPTY_GROUP"
+  },
+  {
+    "type": "talk_topic",
+    "id": "TALK_BIONIC_TALISMAN_1",
+    "dynamic_line": "What hast thou, son of the Earth?  What circuits shall pierce thy brain?  Speak thou quick, for I fade fast.",
+    "responses": [
+      { "text": "Install a bionic for me, sir.", "topic": "TALK_DONE", "effect": [ { "add_debt": [ [ "ALTRUISM", 1 ], [ "TOTAL", 100000 ] ] }, "bionic_install" ] },
+      { "text": "Leave my brain alone, for now.", "topic": "TALK_DONE" }
+    ]
+  },
+  {
+    "type": "recipe",
+    "result": "arcana_technoclysm_bionic_talisman",
+    "category": "CC_ARCANA",
+    "subcategory": "CSC_ARCANA_MAGITECH",
+    "skill_used": "magic",
+    "difficulty": 7,
+    "skills_required": [ [ "electronics", 6 ] ],
+    "time": "1 h",
+    "activity_level": "LIGHT_EXERCISE",
+    "book_learn": [ [ "recipe_lab_arcana", 6 ], [ "recipe_lab_elec", 6 ] ],
+    "qualities": [ { "id": "CUT", "level": 1 } ],
+    "components": [
+      [ [ "paper", 20 ], [ "tanbark", 1 ], [ "birchbark", 1 ], [ "willowbark", 1 ] ],
+      [ [ "bio_power_storage", 1 ], [ "bio_power_storage_mkII", 1 ], [ "bio_batteries", 1 ], [ "bio_metabolics", 1 ], [ "bio_ethanol", 1 ], [ "bio_torsionratchet", 1 ], [ "bio_fuel_cell_gasoline", 1 ], [ "bio_lampoil", 1 ] ]
+    ],
+    "flags": [ "SECRET" ]
+  }
+]

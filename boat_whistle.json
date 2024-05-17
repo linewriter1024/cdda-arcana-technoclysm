@@ -40,5 +40,24 @@
     "activity_level": "LIGHT_EXERCISE",
     "tools": [ [ [ "hexenhammer", -1 ] ] ],
     "components": [ [ [ "scrap", 10 ] ], [ [ "essence_dull", 60 ] ] ]
+  },
+  {
+    "type": "recipe",
+    "result": "magitech_boat_whistle",
+    "category": "CC_ARCANA",
+    "subcategory": "CSC_ARCANA_MAGITECH",
+    "skill_used": "magic",
+    "difficulty": 6,
+    "skills_required": [ [ "mechanics", 4 ] ],
+    "time": "1 h",
+    "activity_level": "LIGHT_EXERCISE",
+    "book_learn": [ [ "recipe_lab_arcana", 5 ], [ "book_hexenhammer", 5 ] ],
+    "qualities": [ { "id": "HAMMER", "level": 2 }, { "id": "SCREW", "level": 1 }, { "id": "SAW_M", "level": 1 } ],
+    "components": [
+      [ [ "arcana_technoclysm_whistle", 1, "LIST" ] ],
+      [ [ "earth_talisman", 1 ] ],
+      [ [ "essence_blood", 10 ], [ "essence_dull", 100 ] ]
+    ],
+    "flags": [ "SECRET" ]
   }
 ]
