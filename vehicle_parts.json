@@ -72,5 +72,32 @@
     "color": "yellow",
     "material": [ "steel" ],
     "price": 800000
+  },
+  {
+    "id": "arcana_technoclysm_advanced_ups",
+    "type": "vehicle_part",
+    "name": { "str": "integrated advanced eternal UPS" },
+    "item": "arcana_technoclysm_advanced_ups_off",
+    "categories": [ "energy" ],
+    "color": "blue",
+    "broken_color": "red",
+    "durability": 120,
+    "description": "An integrated powerful magic device that constantly produces power.",
+    "folded_volume": "1 L",
+    "epower": "1000 W",
+    "breaks_into": [
+      { "item": "essence_dull", "count": [ 6, 9 ] },
+      { "item": "scrap", "count": [ 6, 9 ] }
+    ],
+    "requirements": {
+      "repair": {
+        "skills": [ [ "mechanics", 6 ], [ "electronics", 6 ], [ "magic", 8 ] ],
+        "time": "1 h",
+        "using": [ [ "soldering_standard", 1 ] ]
+      }
+    },
+    "damage_reduction": { "bash": 10 },
+    "flags": [ "REACTOR", "PERPETUAL" ],
+    "variants": [ { "symbols": "0", "symbols_broken": "#" } ]
   }
 ]

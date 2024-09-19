@@ -7,6 +7,7 @@
       [ "magitech_boat_whistle", 10 ],
       [ "magitech_carriage_whistle", 10 ],
       [ "arcana_technoclysm_ups_off", 10 ],
+      [ "arcana_technoclysm_advanced_ups_off", 1 ],
       [ "arcana_technoclysm_bionic_talisman", 10 ]
     ]
   },
