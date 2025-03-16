@@ -6,7 +6,7 @@
     "category": "other",
     "name": { "str": "bionic talisman" },
     "description": "A strange paper talisman marked with intricate symbols vaguely resembling a circuit diagram of great complexity.  Using it will summon an Avatar of the Bionic, who can fuse a bionic device into your body, forging electrical and magical connections to your brain and soul.  The process will leave you paralyzed for some time.",
-    "price_postapoc": 6000,
+    "price_postapoc": "60 USD",
     "weight": "150 g",
     "volume": "100 ml",
     "material": [ "paper" ],

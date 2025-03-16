@@ -71,7 +71,7 @@
     "weight": "10 kg",
     "color": "yellow",
     "material": [ "steel" ],
-    "price": 800000
+    "price": "8000 USD"
   },
   {
     "id": "arcana_technoclysm_advanced_ups",
